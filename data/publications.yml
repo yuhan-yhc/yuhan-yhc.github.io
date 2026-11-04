@@ -1,0 +1,53 @@
+# ============================================================
+#  論文列表 Publications
+#  ⚠️ 以下皆為「範例佔位內容」(PLACEHOLDER),並非真實論文 — 請替換或刪除。
+#  ⚠️ All entries below are PLACEHOLDERS, not real papers — replace or delete.
+#
+#  網站會自動依 year 由新到舊分組排序;同一年內依檔案順序顯示。
+#  Entries are grouped by year (newest first); order within a year follows this file.
+#
+#  欄位 Fields:
+#    title    (必填 required) 論文標題
+#    authors  (必填 required) 作者清單;與 profile.yml 的 author_names 相同者會被標示
+#             Use "*" suffix for equal contribution, e.g. "Your Name*"
+#    venue    (必填 required) 會議/期刊名稱,例如 "NeurIPS 2026"
+#    year     (必填 required) 年份
+#    note     (選填 optional) 例如 "Oral"、"Spotlight"、"Best Paper Award"
+#    image    (選填 optional) 縮圖路徑,放在 assets/img/,例如 "assets/img/paper1.png"
+#    selected (選填 optional) true = 加入「精選 Selected」篩選
+#    links    (選填 optional) 任意名稱: 網址;常用 pdf / arxiv / code / project / video / slides / bibtex
+# ============================================================
+
+- title: "[PLACEHOLDER] An Example Paper Title About Your Research Topic"
+  authors:
+    - "Your Name"
+    - "Coauthor One"
+    - "Advisor Name"
+  venue: "Example Conference (EXC)"
+  year: 2026
+  note: "Oral"
+  selected: true
+  links:
+    pdf: "https://example.com/paper.pdf"
+    code: "https://github.com/your-github-id/project"
+    project: "https://example.com/project"
+
+- title: "[PLACEHOLDER] Another Example Paper with Equal Contribution"
+  authors:
+    - "Coauthor Two*"
+    - "Your Name*"
+    - "Advisor Name"
+  venue: "Example Journal"
+  year: 2025
+  selected: true
+  links:
+    arxiv: "https://arxiv.org/abs/0000.00000"
+
+- title: "[PLACEHOLDER] A Workshop Paper Example"
+  authors:
+    - "Your Name"
+    - "Coauthor Three"
+  venue: "Example Workshop @ EXC"
+  year: 2025
+  links:
+    pdf: "https://example.com/workshop.pdf"
