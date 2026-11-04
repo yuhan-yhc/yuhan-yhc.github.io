@@ -1,0 +1,65 @@
+# ============================================================
+#  個人資料 Profile
+#  ⚠️ 以下皆為「範例佔位內容」(PLACEHOLDER) — 請換成你的真實資料。
+#  ⚠️ Everything below is PLACEHOLDER content — replace with your own.
+# ============================================================
+
+# 姓名(顯示在首頁大標)/ Your name as shown in the header
+name: "Your Name"
+
+# 選填:另一種寫法,例如中文名 / Optional: alternate name (e.g. Chinese name)
+name_alt: "你的名字"
+
+# 職稱 / Title
+title: "Ph.D. Student in Computer Science"
+
+# 單位(可放連結)/ Affiliation (url is optional)
+affiliation:
+  name: "Your University"
+  url: "https://example.edu"
+
+# 選填:地點 / Optional location
+location: "City, Country"
+
+# 大頭照:把圖片放到 assets/img/,再寫路徑 / Photo: put the file in assets/img/
+photo: "assets/img/avatar-placeholder.svg"
+
+# 自我介紹(可多段,空一行分段)/ Bio — blank line = new paragraph.
+# 支援簡單語法 / Supported inline syntax: **粗體 bold**、*斜體 italic*、[連結文字](https://...)
+bio: |
+  [PLACEHOLDER] I am a Ph.D. student at **Your University**, advised by
+  [Prof. Advisor Name](https://example.edu). My research interests include
+  *topic A*, *topic B*, and *topic C*.
+
+  [PLACEHOLDER] Replace this paragraph with a short description of your current
+  work, goals, or what you are looking for (e.g. internships, collaborations).
+
+# 選填:研究興趣標籤 / Optional research-interest tags
+interests:
+  - "Topic A"
+  - "Topic B"
+  - "Topic C"
+
+# 連結圖示:沒有的項目請刪掉或留空 "" / Icon links: delete or leave "" to hide
+# 可用的種類 / Supported keys: email, scholar, github, linkedin, cv, orcid, twitter, website
+links:
+  email: "you@example.com"
+  scholar: "https://scholar.google.com/citations?user=PLACEHOLDER"
+  github: "https://github.com/your-github-id"
+  linkedin: "https://www.linkedin.com/in/your-linkedin-id"
+  cv: ""            # 例如 / e.g. "assets/cv.pdf"(先把 PDF 放進 assets/)
+  orcid: ""
+  twitter: ""
+
+# 在作者列表中要「標示為我」的名字寫法(所有可能的拼法都列上)
+# Name variants to highlight in publication author lists
+author_names:
+  - "Your Name"
+  - "Y. Name"
+
+# 頁尾 / Footer
+footer:
+  # 版權年份起始;留空則只顯示今年 / Start year of copyright (blank = current year only)
+  since: 2026
+  # 選填:頁尾附註 / Optional extra footer note
+  note: ""

@@ -1,0 +1,51 @@
+# ============================================================
+#  經歷 Experience(學歷 Education + 工作 Work)
+#  ⚠️ 以下皆為「範例佔位內容」(PLACEHOLDER) — 請換成你的真實經歷。
+#  ⚠️ All entries below are PLACEHOLDERS — replace with your own.
+#
+#  請依「由新到舊」排列 / List entries newest first.
+#
+#  欄位 Fields:
+#    title    (必填 required) 學位或職稱 Degree / role
+#    org      (必填 required) 學校或公司 School / company
+#    url      (選填 optional) 單位網址
+#    location (選填 optional) 地點
+#    start    (必填 required) 開始時間,例如 "2024" 或 "Sep 2024"
+#    end      (選填 optional) 結束時間;留空或寫 "Present" 代表至今
+#    logo     (選填 optional) 標誌圖片,放在 assets/img/
+#    details  (選填 optional) 條列說明,支援 **粗體**、*斜體*、[連結](https://...)
+# ============================================================
+
+education:
+  - title: "[PLACEHOLDER] Ph.D. in Computer Science"
+    org: "Your University"
+    url: "https://example.edu"
+    location: "City, Country"
+    start: "2024"
+    end: "Present"
+    details:
+      - "Advisor: [Prof. Advisor Name](https://example.edu)"
+
+  - title: "[PLACEHOLDER] B.S. in Computer Science"
+    org: "Your Undergraduate University"
+    location: "City, Country"
+    start: "2020"
+    end: "2024"
+    details:
+      - "GPA / honors / thesis title (optional)"
+
+work:
+  - title: "[PLACEHOLDER] Research Intern"
+    org: "Example Company"
+    url: "https://example.com"
+    location: "City, Country"
+    start: "Jun 2025"
+    end: "Sep 2025"
+    details:
+      - "One line describing what you worked on."
+      - "Another line describing an outcome."
+
+  - title: "[PLACEHOLDER] Undergraduate Research Assistant"
+    org: "Example Lab, Your Undergraduate University"
+    start: "2022"
+    end: "2024"
