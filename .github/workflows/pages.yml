@@ -1,0 +1,53 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate data/*.yml
+        run: |
+          pip install --quiet pyyaml
+          python3 - <<'EOF'
+          import sys, yaml, glob
+          ok = True
+          for f in sorted(glob.glob("data/*.yml")):
+              try:
+                  yaml.safe_load(open(f, encoding="utf-8"))
+                  print(f"OK   {f}")
+              except yaml.YAMLError as e:
+                  ok = False
+                  print(f"FAIL {f}\n{e}")
+          sys.exit(0 if ok else 1)
+          EOF
+
+  deploy:
+    needs: check
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
